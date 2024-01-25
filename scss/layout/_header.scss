@@ -1,0 +1,81 @@
+header{
+    background-color: $color-secundario;
+    width: 100%;
+    @include flex(row, nowrap, space-between, center);
+    padding: 1.25rem 2.5rem;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    div{
+        a{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    input{
+        display: none;
+    }
+    label{
+        @extend input;
+    }
+}
+.navBar{
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+    li{
+        a{
+            text-decoration: none;
+            color: $color-texto;
+            font-family: 'lora', serif;
+            font-size: 2.1875rem;
+            font-weight: bolder;
+            &:hover{
+            color: $color-principal;
+            }
+        }
+        &:hover{
+            transform: scale(1.2);
+            transition: transform 1s;
+        }
+    }
+}
+#buscador{
+    display: block;
+}
+.opciones{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    img{
+        width: 16px;
+        height: 16px;
+        align-items: center;
+    }
+}
+.interaccion{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#botonUsuario{
+    text-decoration: none;
+    color: $color-texto;
+    font-family: 'lora', serif;
+    text-align: center;
+    &:active{
+    color: $color-secundario;
+    }
+}
+
+#botonCarrito{
+    text-decoration: none;
+    color: $color-texto;
+    font-family: 'lora', serif;
+    &:active{
+    color: $color-secundario;
+    }
+}

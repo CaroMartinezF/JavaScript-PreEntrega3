@@ -1,0 +1,79 @@
+#loginUsuario{
+    margin: 3.125rem;
+    div{
+        padding: .625rem;
+        background-color: $color-secundario;
+        label{
+        color: $color-texto;
+        font-family: 'Poppins', sans-serif;
+        font-size: map-get($size , m);
+        }
+        input{
+            font-family: 'Poppins', sans-serif;
+            margin: .3125rem;
+            width: 25%;
+            color: $color-secundario;
+            font-size: map-get($size , m);
+            &:focus{
+                background-color: $color-principal;
+                color: $color-texto;
+            }
+        }
+    }
+}
+#registroUsuario{
+    margin: 3.125rem;
+    div{
+        padding: .625rem;
+        background-color: $color-secundario;
+        label{
+        color: $color-texto;
+        font-family: 'Poppins', sans-serif;
+        font-size: map-get($size , m);
+        }
+        input{
+            font-family: 'Poppins', sans-serif;
+            margin: .3125rem;
+            width: 25%;
+            color: $color-secundario;
+            font-size: map-get($size , m);
+            &:focus{
+                background-color: $color-principal;
+                color: $color-texto;
+            }
+        }
+    }
+}
+
+#botonLogueo{
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: $color-principal;
+    border-color: $color-principal;
+    color: $color-texto;
+    margin-bottom: .625rem;
+    margin-top: .625rem;
+    padding: .625rem;
+    border-radius: .9375rem;
+    &:active{
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: $color-texto;
+    }
+}
+#botonRegistrarse{
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: $color-principal;
+    border-color: $color-principal;
+    color: $color-texto;
+    margin-bottom: .625rem;
+    margin-top: .625rem;
+    padding: .625rem;
+    border-radius: .9375rem;
+    &:active{
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        color: $color-texto;
+    }
+}

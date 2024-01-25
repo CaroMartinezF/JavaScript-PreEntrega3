@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | ElevaFit</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header>
+        <div>
+            <a><img src="../assets/img/logoEleva.jpg" alt=""></a>
+        </div>
+        <input type="checkbox" id="toggle">
+        <label id="iconoMenu" for="toggle"><img src="../assets/img/menu.png" alt="Icono con tres lineas para menu desplegable."></label>
+        <nav>
+            <ul class="navBar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./faqs.html">FAQs</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="interaccion">
+<!--             <div class="opciones">
+                <label for="buscador"></label>
+                <input type="text" id="buscador" placeholder="Buscar Producto">
+                <img src="../assets/img/search.png" alt=""> -->
+            </div>
+            <div class="opciones">
+                <button id="botonCarrito" class="boton">Carrito</button>
+                <img src="../assets/img/carrito.png" alt="">
+            </div>
+            <div class="opciones" id="userLogin">
+                <a href="./usuarios.html" id="botonUsuario" class="boton">Usuario</a>
+                <img src="../assets/img/user.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h2 id="contacto">Contacto</h2>
+        </section>
+        <div id="carrito">
+            <table>
+                <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Unidades</th>
+                    <th>Costo Unitario</th>
+                    <th>Costo Total</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot id="totales"></tfoot>
+            </table>
+        </div>
+        <section class="flexContacto">
+            <section>
+                <form action="">
+                    <fieldset>
+                        <legend>Dejanos tu consulta</legend>
+                        <label for="nombre">Nombre y apellido:</label>
+                        <input type="text" id="nombre" required placeholder="Ingrese su nombre y apellido">
+                        <label for="email">Mail:</label>
+                        <input type="email" id="mail" required placeholder="Ingrese su mail">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" required placeholder="Ingrese un asunto">
+                        <label for="mensaje">Mensaje:</label>
+                        <input type="text" id="mensaje" required placeholder="Ingrese su mensaje">
+                        <input type="submit" id="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </section>  
+            <section id="ubicacion">
+                <h3>Ubicación</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.03503692947!2d-57.95317029999999!3d-34.9205082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694658491761!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>La Plata, Argentina</li>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <div>
+                    <h4>Redes Sociales</h4>
+                </div>
+                <div>
+                    <img src="../assets/img/iconoInstagram.png" alt="Icono de Instagram">
+                    <li><a href="" target="_blank">ElevaFit</a></li>
+                </div>
+                <div>
+                    <img src="../assets/img/iconoFacebook.png" alt="Icono de Facebook">
+                    <li><a href="" target="_blank">ElevaFit</a></li>
+                </div>
+                <div>
+                    <h4>Ubicación</h4>
+                </div>
+                <div>
+                    <img src="../assets/img/iconoUbicacion.png" alt="Icono de ubicación">
+                    <li><a href="https://www.google.com.ar/maps/place/La+Plata,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95a2e62b1f0085a1:0xbcfc44f0547312e3?sa=X&ved=2ahUKEwjgzNSbxrqBAxWlKrkGHWrxAKEQ8gF6BAgSEAA&ved=2ahUKEwjgzNSbxrqBAxWlKrkGHWrxAKEQ8gF6BAgTEAI">La Plata, Argentina</a></li>
+                </div>
+                <div>
+                    <h4>Información</h4>
+                </div>
+                <div>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="">Tabla de Medidas</a></li>
+                    <li><a href="">¿Cómo comprar?</a></li>
+                    <li><a href="">Envío y seguimiento</a></li>
+                    <li><a href="">Cambios y devoluciones</a></li>
+                    <li><a href="">FAQs</a></li>
+                </div>
+                
+                <div>
+                    <h4>Contacto</h4>
+                </div>
+                <div>
+                    <img src="../assets/img/logoWhatsApp.png" alt="Icono de WhatsApp">
+                    <li><a href="" target="_blank">1125555555</a></li>
+                </div>
+                <div>
+                    <img src="../assets/img/iconoMail.png" alt="Icono de Mail">
+                    <li><a href="" target="_blank">maila@gmail.com</a></li>
+                </div>
+            </ul>
+        </nav>
+        <a class="whatsapp" href=""><img src="../assets/img/whatsapp.png" alt="Logo de WhatsApp"></a>
+    </footer>
+    <script type="module" src="../db/productos.js"></script>
+    <script type="module" src="../db/usuarios.js"></script>
+    <script type="module" src="../js/paginaProductos.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+    <script type="module" src="../js/administrador.js"></script>
+    <script type="module" src="../js/usuario.js"></script>
+</body>
+</html>

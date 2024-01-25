@@ -1,0 +1,86 @@
+footer{
+    background-color: $color-secundario;
+    nav{
+        ul{
+            width: 100%;
+            list-style: none;
+            padding-left: .625rem;
+            padding-top: .625rem;
+            padding-bottom: .625rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            row-gap: .625rem;
+            margin-bottom: 0;
+            div{
+                h4{
+                    color: $color-principal;
+                    font-size: .9375rem;
+                    text-align: left;
+                }
+                li{
+                    width: fit-content;
+                    a{
+                        text-decoration: none;
+                        color: $color-texto;
+                        font-family: 'lora', serif;
+                        font-size: 1.125rem;
+                        padding-left: .625rem;
+                        &:hover{
+                            color: $color-principal;
+                        }
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: transform 1s;
+                    }
+                }
+                &:first-child{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    align-items: center;
+                }
+                &:nth-child(2){
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    @include flex(row,nowrap,none,center);
+                }
+                &:nth-child(3){
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                    @include flex(row,nowrap,none,center);
+                }
+                &:nth-child(4){
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    align-items: center;
+                }
+                &:nth-child(5){
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    @include flex(row,nowrap,none,center);
+                }
+                &:nth-child(6){
+                    grid-column: 2/3;
+                    grid-row: 3/4;
+                    @include flex(row,nowrap,none,center);
+                }
+                &:nth-child(7){
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                    @include flex(row,nowrap,none,center);
+                }
+                &:last-child{
+                    grid-column: 3/4;
+                    grid-row: 2/4;
+                    @include flex(row,nowrap,none,center);
+                }
+            }
+        }
+    }
+}
+.whatsapp{
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+}
