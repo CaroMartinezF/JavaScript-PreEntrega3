@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         close.id = "cerrarSesion"
         close.innerHTML = "cerrar sesion"
         close.addEventListener("click", () => {
-            alert("Gracias por visitar ElevaFit. Usuario deslogeado")
             sessionStorage.removeItem("usuario")
             location.reload()
         })

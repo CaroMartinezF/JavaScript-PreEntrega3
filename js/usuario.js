@@ -40,7 +40,7 @@ const validarYLogear = (user, pass) => {
             timer: 2000
         });
         setTimeout(()=>{
-            location.href = "../index.html"
+            location.href = "../pages/productos.html" 
         }
         ,2200
         )
@@ -89,11 +89,6 @@ const validarYRegistrar = (usuarioNuevo) => {
             text: "El usuario ya existe.",
         });
         sessionStorage.setItem("usuario", JSON.stringify(usuario))
-/*         setTimeout(()=>{
-            location.href = "../inicio.html"
-        }
-        ,2200
-        ) */
     };
 }
 

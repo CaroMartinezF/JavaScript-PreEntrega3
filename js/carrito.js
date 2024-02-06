@@ -29,7 +29,10 @@ export const comprarProducto = (idProducto) =>{
     //Actualizo mi carrito
     carrito = JSON.parse(sessionStorage.getItem("carrito"))
     crearCarrito()
-    alert(`Producto: ${nombre} agregado con exito al carrito`)
+    Swal.fire({
+        icon: "success",
+        title: `Producto: ${nombre} agregado con exito al carrito`,
+    });
 }
 
 //Crear carrito al tocar el boton de Carrito
