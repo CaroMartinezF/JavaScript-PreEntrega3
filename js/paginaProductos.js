@@ -120,6 +120,4 @@ ordenarPrecio.addEventListener("click", (e) => {
 });
 
 
-import {imgPerfiles} from "../db/usuarios.js";
-
 
