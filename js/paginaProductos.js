@@ -56,16 +56,23 @@ document.addEventListener("DOMContentLoaded", () => {
         botonUsuario.appendChild(a)
     }else{
         botonUsuario.style.display="none"
-        const p = document.createElement("p")
+        imgUsuario.style.display="none"
+        const div = document.createElement("div")
+        div.classList.add("divUsuario");
         const close = document.createElement("button")
-        p.innerHTML = `Bienvenido/a ${usuarioLogeado.user}`
+        div.innerHTML = `
+        <p>Bienvenido/a ${usuarioLogeado.user}</p>
+        <img class="imagenPerfil" src ="${usuarioLogeado.img}">
+        
+        `
+        
         close.id = "cerrarSesion"
         close.innerHTML = "cerrar sesion"
         close.addEventListener("click", () => {
             sessionStorage.removeItem("usuario")
             location.reload()
         })
-        userLogin.appendChild(p)
+        userLogin.appendChild(div)
         userLogin.appendChild(close)
     }
     generarCardsProductos (productosDisponibles)
@@ -111,3 +118,8 @@ ordenarPrecio.addEventListener("click", (e) => {
     console.log(productos);
     generarCardsProductos(productos)
 });
+
+
+import {imgPerfiles} from "../db/usuarios.js";
+
+

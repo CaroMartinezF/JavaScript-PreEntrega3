@@ -49,11 +49,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: right;
-    img{
-        width: 16px;
-        height: 16px;
-        align-items: center;
-    }
+}
+.imgLogos{
+    width: 16px;
+    height: 16px;
+    align-items: center;
 }
 .interaccion{
     display: flex;
@@ -78,4 +78,10 @@ header{
     &:active{
     color: $color-secundario;
     }
+}
+
+.divUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

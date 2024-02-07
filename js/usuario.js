@@ -2,13 +2,13 @@ const formLogin = document.getElementById("loginUsuario");
 const botonLogin = document.getElementById("botonLogueo");
 const botonRegistrarse = document.getElementById("botonRegistrarse");
 const formRegistrarse = document.getElementById("registroUsuario");
-
-
+import {imgPerfiles} from "../db/usuarios.js";
+console.log(imgPerfiles);
 let usuarios = JSON.parse(localStorage.getItem("usuarios"));
 //Creo una clase constructora de un nuevo Usuario, con los datos, y por default el permiso de administrador como false.
 class nuevoUsuario{
     constructor(user, pass){
-        this.id = usuarios.lenth + 1
+        this.id = usuarios.length + 1
         this.user = user
         this.pass = pass
         this.admin = false
@@ -48,6 +48,8 @@ const validarYLogear = (user, pass) => {
             user: usuarioExiste.user,
             pass: usuarioExiste.pass,
             admin: usuarioExiste.admin,
+            img: imgPerfiles[usuarioExiste.id]
+            /* imgPerfiles[usuarioExiste.id], */
         }
         sessionStorage.setItem("usuario", JSON.stringify(usuario))
     }

@@ -90,10 +90,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: right; }
-  .opciones img {
-    width: 16px;
-    height: 16px;
-    align-items: center; }
+
+.imgLogos {
+  width: 16px;
+  height: 16px;
+  align-items: center; }
 
 .interaccion {
   display: flex;
@@ -114,6 +115,11 @@ header {
   font-family: 'lora', serif; }
   #botonCarrito:active {
     color: #190E08; }
+
+.divUsuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .contenedorCategoria {
   width: 100%;
@@ -310,6 +316,12 @@ footer {
     background-color: white;
     border-color: white;
     color: #190E08; }
+
+.imagenPerfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; }
 
 /* PAGINA CONTACTO */
 #ubicacion {
