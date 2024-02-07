@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Eleva Fit</title>
+    <title>Productos | ElevaFit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-<body>
+<body id="body">
     <header>
         <div>
             <a><img src="./assets/img/logoEleva.jpg" alt=""></a>
@@ -17,37 +17,49 @@
         <label id="iconoMenu" for="toggle"><img src="./assets/img/menu.png" alt="Icono con tres lineas para menu desplegable."></label>
         <nav>
             <ul class="navBar">
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/faqs.html">FAQs</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="#">Home - Productos</a></li>
             </ul>
         </nav>
         <section class="interaccion">
-<!--             <div class="opciones">
+            <div class="opciones">
                 <label for="buscador"></label>
                 <input type="text" id="buscador" placeholder="Buscar Producto">
-                <img src="../assets/img/search.png" alt="">
-            </div> -->
+                <img class="imgLogos" src="./assets/img/search.png" alt="">
+            </div>
             <div class="opciones">
                 <button id="botonCarrito" class="boton">Carrito</button>
-                <img class="imgLogos" src="../assets/img/carrito.png" alt="">
+                <img class="imgLogos" src="./assets/img/carrito.png" alt="">
             </div>
             <div class="opciones" id="userLogin">
                 <a href="./pages/usuarios.html" id="botonUsuario" class="boton">Usuario</a>
-                <img class="imgLogos" src="../assets/img/user.png" alt="">
+                <img class="imgLogos" id="imgUsuario" src="./assets/img/user.png" alt="">
+            </div>
+            <div id="divImagen">
             </div>
         </section>
     </header>
     <main>
-        <!-- Sección Banner Principal -->
-        <section>
-            <div>
-                <img src="" alt="">
+        <section class="btn-group">
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle boton filtros" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                </button>
+                <ul class="dropdown-menu" id="filterLista">
+                    <li><a class="dropdown-item" href="#">Todos</a></li>
+                    <li><a class="dropdown-item" href="#">Bikers</a></li>
+                    <li><a class="dropdown-item" href="#">Tops</a></li>
+                    <li><a class="dropdown-item" href="#">Shorts</a></li>
+                    <li><a class="dropdown-item" href="#">Remeras</a></li>
+                </ul>
             </div>
-            <div>
-                <h1>Bienvenido a Eleva Fit</h1>
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle boton filtros" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Precio
+                </button>
+                <ul class="dropdown-menu" id="ordenarPrecio">
+                    <li><a class="dropdown-item" href="#">Mayor a menor</a></li>
+                    <li><a class="dropdown-item" href="#">Menor a mayor</a></li>
+                </ul>
             </div>
         </section>
         <div id="carrito">
@@ -66,56 +78,11 @@
                 <tfoot id="totales"></tfoot>
             </table>
         </div>
-        <!-- Seccion Productos Destacados -->
-        <section>
-            <div>
-                <h2>Productos Destacados</h2>
-            </div>
-            <div class="contenedorProductosDestacados">
-            </div>
-
-        </section>
-        <!-- Sección Información importante -->
-        <section>
-            <div>
-                <img src="" alt="">
-                <h3>Envío a todo el pais</h3>
-                <p class="texto">CABA y GBA en 24hs hábiles</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Medios de pago</h3>
-                <p class="texto">Transferencia, crédito, debito</p>
-            </div>
-        </section>
-        <!-- Sección Categorías -->
-        <section>
-            <div>
-                <h2>Categorías</h2>
-            </div>
-            <div class="contenedorCategoria">
-                <div>
-                    <img src="https://img.freepik.com/foto-gratis/retrato-mujer-vestido-fajas_23-2149749534.jpg?w=740&t=st=1706144744~exp=1706145344~hmac=6ffc04d0c0f9826b0fa149758620d7ec22a48cde2919f65b1795315947d50fb0" alt="">
-                    <h4>BIKERS</h4>
-                    <button class="boton"  id="bikers">Ver Productos</button>
-                </div>
-                <div>
-                    <img src="https://img.freepik.com/fotos-premium/vida-es-corredor-movimiento-pista-estadio-mujer-verano-fitness-entrenamiento-trotar-deporte_386167-4255.jpg?w=900" alt="">
-                    <h4>SHORTS</h4>
-                    <button class="boton" id="shorts">Ver Productos</button>
-                </div>
-                <div>
-                    <img src="https://img.freepik.com/fotos-premium/joven-deportista-atractiva-descansando-despues-intensa-carrera-nocturna-al-aire-libre-al-atardecer-ciudad_484651-16168.jpg?w=1060" alt="">
-                    <h4>REMERAS</h4>
-                    <button class="boton" id="remeras">Ver Productos</button>
-                </div>
-                <div>
-                    <img src="https://img.freepik.com/foto-gratis/hermosa-mujer-traje-yoga-sesion-moda-ropa-deportiva-diadema_53876-102114.jpg?w=740&t=st=1705878880~exp=1705879480~hmac=944f1ac119da2fbbd87b226e2fb32a7db371c513a1c00d33762271d9b8c0fd34" alt="">
-                    <h4>TOPS</h4>
-                    <button class="boton" id="tops">Ver Productos</button>
-                </div>
-            </div>
-        </section>
+        <div>
+            <h2>Productos</h2>
+        </div>
+        <div id="contenedorProductos">
+        </div>
     </main>
     <footer>
         <nav>
@@ -125,11 +92,11 @@
                 </div>
                 <div>
                     <img src="./assets/img/iconoInstagram.png" alt="Icono de Instagram">
-                    <li><a href="./pages/error404.html" target="_blank">ElevaFit</a></li>
+                    <li><a href="" target="_blank">ElevaFit</a></li>
                 </div>
                 <div>
                     <img src="./assets/img/iconoFacebook.png" alt="Icono de Facebook">
-                    <li><a href="./pages/error404.html" target="_blank">ElevaFit</a></li>
+                    <li><a href="" target="_blank">ElevaFit</a></li>
                 </div>
                 <div>
                     <h4>Ubicación</h4>
@@ -155,23 +122,23 @@
                 </div>
                 <div>
                     <img src="./assets/img/logoWhatsApp.png" alt="Icono de WhatsApp">
-                    <li><a href="./pages/error404.html" target="_blank">1125555555</a></li>
+                    <li><a href="" target="_blank">1125555555</a></li>
                 </div>
                 <div>
                     <img src="./assets/img/iconoMail.png" alt="Icono de Mail">
-                    <li><a href="./pages/error404.html" target="_blank">maila@gmail.com</a></li>
+                    <li><a href="" target="_blank">maila@gmail.com</a></li>
                 </div>
             </ul>
         </nav>
-        <a class="whatsapp" href="./pages/error404.html"><img src="./assets/img/whatsapp.png" alt="Logo de WhatsApp"></a>
+        <a class="whatsapp" href=""><img src="./assets/img/whatsapp.png" alt="Logo de WhatsApp"></a>
     </footer>
-    <!-- <script type="module" src="./db/productos.js"></script>
+    <script type="module" src="./db/productos.js"></script>
     <script type="module" src="./db/usuarios.js"></script>
-<script type="module" src="./js/paginaProductos.js"></script> -->
+    <script type="module" src="./js/paginaProductos.js"></script>
     <script type="module" src="./js/carrito.js"></script>
     <script type="module" src="./js/administrador.js"></script>
-    <!-- <script type="module" src="./js/usuario.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--     <script type="module" src="../js/usuario.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>

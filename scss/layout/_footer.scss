@@ -66,6 +66,11 @@ footer{
                     @include flex(row,nowrap,none,center);
                 }
                 &:nth-child(7){
+                    grid-column: 2/3;
+                    grid-row: 4/5;
+                    @include flex(row,nowrap,none,center);
+                }
+                &:nth-child(8){
                     grid-column: 3/4;
                     grid-row: 1/2;
                     @include flex(row,nowrap,none,center);

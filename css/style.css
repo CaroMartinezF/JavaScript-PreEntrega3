@@ -64,7 +64,7 @@ header {
   header div a img {
     width: 100px;
     height: 100px; }
-  header input, header label, header .flexContacto section form fieldset input, .flexContacto section form fieldset header input {
+  header input, header label {
     display: none; }
 
 .navBar {
@@ -120,34 +120,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.contenedorCategoria {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%; }
-  .contenedorCategoria div {
-    background-color: #190E08;
-    width: 25rem;
-    height: fit-content;
-    margin: 2.5rem;
-    border-radius: 10%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; }
-    .contenedorCategoria div img {
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
-      filter: opacity(40%); }
-      .contenedorCategoria div img:hover {
-        filter: opacity(100%); }
 
 footer {
   background-color: #190E08; }
@@ -220,6 +192,14 @@ footer {
       justify-content: none;
       align-items: center; }
     footer nav ul div:nth-child(7) {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: none;
+      align-items: center; }
+    footer nav ul div:nth-child(8) {
       grid-column: 3/4;
       grid-row: 1/2;
       display: flex;
@@ -323,70 +303,12 @@ footer {
   border-radius: 50%;
   object-fit: cover; }
 
-/* PAGINA CONTACTO */
-#ubicacion {
-  width: 45%; }
-  #ubicacion iframe {
-    align-items: center;
-    width: 100%; }
-
-.flexContacto {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: none;
-  padding-bottom: 2.5rem; }
-  .flexContacto section {
-    color: white;
-    background-color: #190E08;
-    width: 50%; }
-    .flexContacto section form {
-      margin: .3125rem; }
-      .flexContacto section form fieldset {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        font-size: 2.1875rem;
-        padding-left: 1.875rem;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: none;
-        align-items: flex-start; }
-        .flexContacto section form fieldset label, .flexContacto section form fieldset input {
-          margin: .3125rem;
-          font-size: 1.875rem;
-          width: 95%; }
-        .flexContacto section form fieldset input, .flexContacto section form fieldset header label, header .flexContacto section form fieldset label {
-          color: #190E08; }
-          .flexContacto section form fieldset input:focus, .flexContacto section form fieldset header label:focus, header .flexContacto section form fieldset label:focus {
-            background-color: #DA209B;
-            color: white; }
-
-#submit {
-  background-color: #DA209B;
-  border-color: #DA209B;
-  margin-bottom: .625rem;
-  margin-top: .625rem;
-  padding: .625rem;
-  border-radius: .9375rem;
-  color: white; }
-  #submit:active {
-    background-color: #190E08;
-    border-color: #190E08; }
-
-#contacto {
-  color: #190E08; }
-
 #loginUsuario {
   margin: 3.125rem; }
   #loginUsuario div {
     padding: .625rem;
     background-color: #190E08; }
-    #loginUsuario div label, #loginUsuario div .flexContacto section form fieldset input, .flexContacto section form fieldset #loginUsuario div input {
+    #loginUsuario div label {
       color: white;
       font-family: 'Poppins', sans-serif;
       font-size: 1.875rem; }
@@ -405,7 +327,7 @@ footer {
   #registroUsuario div {
     padding: .625rem;
     background-color: #190E08; }
-    #registroUsuario div label, #registroUsuario div .flexContacto section form fieldset input, .flexContacto section form fieldset #registroUsuario div input {
+    #registroUsuario div label {
       color: white;
       font-family: 'Poppins', sans-serif;
       font-size: 1.875rem; }

@@ -40,7 +40,7 @@ const validarYLogear = (user, pass) => {
             timer: 2000
         });
         setTimeout(()=>{
-            location.href = "../pages/productos.html" 
+            location.href = "../index.html" 
         }
         ,2200
         )
@@ -49,7 +49,6 @@ const validarYLogear = (user, pass) => {
             pass: usuarioExiste.pass,
             admin: usuarioExiste.admin,
             img: imgPerfiles[usuarioExiste.id]
-            /* imgPerfiles[usuarioExiste.id], */
         }
         sessionStorage.setItem("usuario", JSON.stringify(usuario))
     }
@@ -63,6 +62,13 @@ botonRegistrarse.addEventListener("click", (e) =>{
 
     const usuarioNuevo = new nuevoUsuario (user, pass)
     validarYRegistrar(usuarioNuevo)
+    let usuario = {
+        user: user,
+        pass: pass,
+        admin: false,
+        img: imgPerfiles[usuarios.length]
+    }
+    sessionStorage.setItem("usuario", JSON.stringify(usuario))
 });
 //Cuando hace click, valido si existe el usuario y si la contraseña es la correcta
 const validarYRegistrar = (usuarioNuevo) => {
@@ -80,7 +86,7 @@ const validarYRegistrar = (usuarioNuevo) => {
             timer: 2000
         });
         setTimeout(()=>{
-            location.href = "../pages/productos.html" 
+            location.href = "../index.html" 
         }
         ,2200
         )
